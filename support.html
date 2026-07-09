@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kim Ne Taktı? — Destek</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fafafa; --surface: #ffffff; --text: #1a1a1f; --text-secondary: #73737a;
+    --primary: #e31a24; --border: #eee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --surface: #1c1c1f; --text: #f2f2f3; --text-secondary: #a0a0a6; --border: #2a2a2e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 28px; margin-bottom: 32px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 20px; }
+  h2 { font-size: 17px; margin-top: 0; color: var(--primary); }
+  a.button {
+    display: inline-block; margin-top: 12px; padding: 12px 24px; border-radius: 12px;
+    background: var(--primary); color: #fff; text-decoration: none; font-weight: 600;
+  }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--primary); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Kim Ne Taktı? — Destek</h1>
+
+    <div class="card">
+      <h2>Bize Ulaşın</h2>
+      <p>Bir hata mı buldunuz, bir öneriniz mi var, yoksa genel bir sorunuz mu? Bize doğrudan yazabilirsiniz.</p>
+      <a class="button" href="mailto:kimnetakti@gmail.com">kimnetakti@gmail.com</a>
+    </div>
+
+    <div class="card">
+      <h2>Sık Sorulan Sorular</h2>
+      <ul>
+        <li><strong>Verilerim nerede saklanıyor?</strong> Tüm kayıtlarınız cihazınızda tutulur ve yalnızca kendi iCloud hesabınız üzerinden diğer cihazlarınızla senkronize edilir. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>'na bakabilirsiniz.</li>
+        <li><strong>Verilerimi nasıl silerim?</strong> Uygulama içinde Ayarlar &gt; Tüm Verileri Sıfırla ile tüm kayıtları kalıcı olarak silebilirsiniz.</li>
+        <li><strong>Pro sürüm ne sağlıyor?</strong> Reklamları kaldırır; sınırsız etkinlik, PDF dışa aktarma ve toplu davetli içe aktarma özelliklerini açar.</li>
+        <li><strong>Satın alımımı nasıl geri yüklerim?</strong> Ayarlar &gt; Satın Alımları Geri Yükle ile önceki Pro satın alımınızı aynı Apple ID ile geri yükleyebilirsiniz.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
