@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kim Ne Taktı? — Düğün takı ve altın takip uygulaması</title>
+<meta name="description" content="Kim Ne Taktı?, düğün, kına, nişan ve sünnette takılan altın ve hediyeleri kaydeden, bugünkü değerini hesaplayan ücretsiz takı takip uygulamasıdır.">
+<link rel="canonical" href="https://minikapps.github.io/KimNeTakti/">
+<meta name="google-site-verification" content="5a-YYEuB-7x_oYwMGrAh5dJcfmfg1bdLDTIsRGbo8tQ">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Kim Ne Taktı?">
+<meta property="og:title" content="Kim Ne Taktı? — Düğün takı ve altın takip uygulaması">
+<meta property="og:description" content="Takılan altın ve hediyeleri kaydet, bugünkü değerini gör, karşılığını unutma.">
+<meta property="og:url" content="https://minikapps.github.io/KimNeTakti/">
+<meta property="og:image" content="https://minikapps.github.io/KimNeTakti/icon-512.png">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Kim Ne Taktı?",
+  "alternateName": "Kim Ne Taktı - düğün takı takip uygulaması",
+  "description": "Düğün, kına, nişan ve sünnette takılan altın ve hediyeleri kaydeden, bugünkü değerini hesaplayan takı takip uygulaması.",
+  "url": "https://minikapps.github.io/KimNeTakti/",
+  "image": "https://minikapps.github.io/KimNeTakti/icon-512.png",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "iOS",
+  "inLanguage": ["tr", "en", "de", "az", "ar"],
+  "installUrl": "https://apps.apple.com/app/id6789083997",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "TRY" },
+  "author": { "@type": "Organization", "name": "minikapps", "email": "kimnetakti@gmail.com" }
+}
+</script>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fafafa; --surface: #ffffff; --text: #1a1a1f; --text-secondary: #73737a;
+    --primary: #e31a24; --border: #eee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121214; --surface: #1c1c1f; --text: #f2f2f3; --text-secondary: #a0a0a6; --border: #2a2a2e; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--primary); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero { text-align: center; padding: 64px 0 40px; }
+  header.hero img { border-radius: 22px; }
+  header.hero h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 16px 0 8px; }
+  header.hero .kicker { color: var(--primary); font-weight: 600; margin: 0; }
+  header.hero .lead { color: var(--text-secondary); font-size: 18px; max-width: 560px; margin: 12px auto 28px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; }
+  a.primary {
+    display: inline-block; padding: 14px 28px; border-radius: 12px;
+    background: var(--primary); color: #fff; text-decoration: none; font-weight: 600;
+  }
+  .soon { color: var(--text-secondary); font-size: 14px; }
+
+  .shots {
+    display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 8px 24px 24px; margin: 0 -24px;
+  }
+  .shots img {
+    flex: 0 0 auto; width: 220px; height: auto; aspect-ratio: 300 / 649;
+    border-radius: 18px; scroll-snap-align: center; background: var(--surface);
+    border: 1px solid var(--border);
+  }
+
+  section { padding: 40px 0; }
+  h2 { font-size: 26px; margin: 0 0 20px; text-align: center; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; }
+  .card h3 { font-size: 17px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--text-secondary); }
+
+  .faq { max-width: 720px; margin: 0 auto; }
+  .faq details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; margin-bottom: 10px; }
+  .faq summary { font-weight: 600; cursor: pointer; }
+  .faq details p { margin: 10px 0 0; color: var(--text-secondary); }
+  .faq .more { text-align: center; margin-top: 16px; }
+
+  footer { border-top: 1px solid var(--border); padding: 24px 0 48px; text-align: center; color: var(--text-secondary); font-size: 14px; }
+  footer nav { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <img src="icon-512.png" alt="Kim Ne Taktı? uygulama simgesi" width="96" height="96">
+      <h1>Kim Ne Taktı?</h1>
+      <p class="kicker">Düğün takı ve altın takip uygulaması</p>
+      <p class="lead">Düğün, kına, nişan ve sünnette takılan altın ve hediyeleri kaydedin, bugünkü değerini görün, kime ne taktığınızı asla unutmayın.</p>
+      <div class="cta">
+        <a class="primary" href="https://apps.apple.com/app/id6789083997">App Store'dan indir</a>
+        <span class="soon">Android sürümü yakında</span>
+      </div>
+    </header>
+
+    <div class="shots" aria-label="Ekran görüntüleri">
+      <img src="screenshots/1.webp" width="300" height="649" loading="lazy" alt="Düğünlerim ekranı: düğün, kına, nişan ve sünnet etkinlikleri ayrı ayrı listelenir">
+      <img src="screenshots/2.webp" width="300" height="649" loading="lazy" alt="Etkinlik ekranı: takıların bugünkü değeri ve takıldığı günkü değeri">
+      <img src="screenshots/3.webp" width="300" height="649" loading="lazy" alt="Kime Ne Taktım ekranı: sizin taktığınız hediyelerin bugünkü toplam değeri">
+      <img src="screenshots/4.webp" width="300" height="649" loading="lazy" alt="Özet ve Analiz ekranı: kişi kişi alınan ve verilen hediyeler">
+      <img src="screenshots/5.webp" width="300" height="649" loading="lazy" alt="Excel ve PDF dışa aktarma ile ana ekran widget'ı">
+    </div>
+
+    <section>
+      <h2>Neler yapabilirsiniz?</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Tüm etkinlikler tek yerde</h3>
+          <p>Düğün, kına, nişan ve sünnetlerinizi ayrı ayrı takip edin; davetli listesini de aynı yerde tutun.</p>
+        </div>
+        <div class="card">
+          <h3>Yıllar önceki takılar, bugünün değeriyle</h3>
+          <p>Çeyrek, yarım, tam, bilezik, gram altın ve döviz; güncel kurla anında hesaplanır. Takıldığı günkü değer TCMB verisiyle gösterilir.</p>
+        </div>
+        <div class="card">
+          <h3>Kime ne taktığınızı unutmayın</h3>
+          <p>Sizin taktığınız hediyeleri de kaydedin; karşılık takarken neyi ne zaman verdiğinizi bilin.</p>
+        </div>
+        <div class="card">
+          <h3>Kim kime ne vermiş, bir bakışta</h3>
+          <p>Özet ekranında her kişi için aldığınızı ve verdiğinizi yan yana görün.</p>
+        </div>
+        <div class="card">
+          <h3>Excel ve PDF'e aktarın</h3>
+          <p>Listenizi paylaşın ya da yazdırın. Excel'den toplu kayıt ekleyerek zaman kazanın.</p>
+        </div>
+        <div class="card">
+          <h3>Ana ekranda geri sayım</h3>
+          <p>Widget, düğüne kaç gün kaldığını sayar; bittiğinde toplam değeri gösterir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Sık sorulanlar</h2>
+      <details>
+        <summary>Uygulama ücretsiz mi?</summary>
+        <p>Evet. Ücretsiz sürümde reklam gösterilir. Pro sürüm reklamları kaldırır; sınırsız etkinlik ve sınırsız Excel'den toplu aktarım sağlar.</p>
+      </details>
+      <details>
+        <summary>Verilerim nerede saklanıyor?</summary>
+        <p>Kayıtlarınız cihazınızda tutulur; bize ait bir sunucuya gönderilmez, hesap açmanız gerekmez. iPhone'da iCloud ile diğer Apple cihazlarınıza senkronize edilir.</p>
+      </details>
+      <details>
+        <summary>Android sürümü var mı?</summary>
+        <p>Android sürümü hazırlanıyor ve yakında Google Play'de olacak.</p>
+      </details>
+      <details>
+        <summary>Takıların değeri nasıl hesaplanıyor?</summary>
+        <p>Bugünkü değer güncel altın ve döviz kurlarıyla, takıldığı günkü değer ise uygulamayla birlikte gelen TCMB verileriyle hesaplanır. Değerler tahminidir, yalnızca bilgilendirme amaçlıdır ve yatırım tavsiyesi değildir.</p>
+      </details>
+      <p class="more"><a href="support.html">Tüm sorular ve destek →</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <nav>
+        <a href="support.html">Destek</a>
+        <a href="privacy.html">Gizlilik Politikası</a>
+        <a href="mailto:kimnetakti@gmail.com">kimnetakti@gmail.com</a>
+      </nav>
+      <div>Altın ve döviz verileri: Türkiye Cumhuriyet Merkez Bankası (TCMB). Değerler tahminidir, yalnızca bilgilendirme amaçlıdır ve yatırım tavsiyesi değildir; bu değerlere dayanılarak yapılan işlemlerden sorumluluk kabul edilmez.</div>
+    </div>
+  </footer>
+</body>
+</html>
